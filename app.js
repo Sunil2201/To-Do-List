@@ -64,20 +64,20 @@ todos.forEach((todo)=>{
     if(todo.classList!==undefined){
    switch(e.target.value){
             case "all":
-                todo.style.display = "flex";
+                todo.style.display = "flex"; !important
                 break; 
             case "completed":
             if(todo.classList.contains("completed")){
-              todo.style.display="flex";
+              todo.style.display="flex";  !important
             }else{
-                todo.style.display = "none";
+                todo.style.display = "none";  !important
             }
             break; 
             case "uncompleted":
                 if(!todo.classList.contains("completed")){
-                    todo.style.display="flex";
+                    todo.style.display="flex";  !important
                 }else{
-                    todo.style.display = "none";
+                    todo.style.display = "none";  !important
                 }
                 break; 
                 
